@@ -1,0 +1,255 @@
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a, button {
+  cursor: revert;
+}
+ol, ul, menu {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+textarea {
+  white-space: revert;
+}
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+::placeholder {
+  color: unset;
+}
+:where([hidden]) {
+  display: none;
+}
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Quantico';
+  color: #796A49;
+}
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.12em;
+  color: #796A49;
+  padding-bottom: 10px;
+}
+p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  color: #796A49;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 507px;
+}
+@media only screen and (max-width: 768px)  {
+  .container {
+      width: 350px;
+  }
+}
+.text-block {
+  padding: 15px 23px 22px;
+  background: #FFF6E3;
+  margin-bottom: 10px;
+}
+.strong {
+  font-weight: 700;
+}
+.hide {
+  display: none;
+}
+.header-wrap {
+  background: #DDE6FF;
+}
+.header-outer {
+  padding-top: 120px;
+  background: url(../images/bg.jpg) no-repeat;
+  position: relative;
+}
+.main-info {
+  position: relative;
+}
+.avatar {
+  position: absolute;
+  top: -80px;
+  left: 50px;
+  width: 133px;
+  height: 133px;
+  background: url(../images/avatar.png) no-repeat;
+}
+@media only screen and (max-width: 768px)  {
+  .avatar {
+      top: -90px;
+      left: 10px;
+  }
+}
+.name {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  padding-left: 200px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  padding-left: 200px;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .name {
+      padding-left: 150px;
+  }
+  .contacts {
+      padding-top: 10px;
+      padding-left: 150px;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+  }
+  
+}
+.cave {
+  width: 200px;
+}
+#enter-game {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#enter-game p {
+  margin-bottom: 20px;
+}
+.btn {
+  color: #ffffff;
+  background: #3AD4F7;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-play {    
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+#boss {
+  background: url(../images/bg_d.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.boss-life-bar-outer {
+  width: 212px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.boss-life-bar-inner {
+  background: linear-gradient(180deg, #EA1E1E 0%, #830A0A 100%);
+  height: 25px;
+}
+.boss-outer {
+  background: url(../images/head_boss.png);
+  width: 107px;
+  height: 84px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.dialogue-outer {
+  width: 230px;
+  background: #000000;
+  border: 2px solid #CCAF82;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #CCAF82;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.action-outer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.action-row {
+  width: 70px;
+  margin-bottom: 10px;
+  padding-bottom: 70px;    
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 10px;
+}
+.action-row:hover {
+  cursor: pointer;
+}
+.physical {
+  background: url(../images/physical.png) no-repeat bottom center;
+}
+.magical {
+  background: url(../images/magical.png) no-repeat bottom center;
+}
+.mental {
+  background: url(../images/mental.png) no-repeat bottom center;
+}
+#result {
+  color: #ffffff;
+}
+#win-game {
+  background: url(../images/bg_d.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+}
+.wininfo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FDDC2E;
+}
+#cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}

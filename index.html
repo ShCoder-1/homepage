@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Résumé</title>
+    
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="design/css/main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <div style="display: flex; flex-direction: column;">
+      <div class="header-wrap flex-center">
+        <div class="container header-outer"></div>
+      </div>
+      
+      
+      <div class="body-wrap flex-center">
+        <div class="container">
+          
+          <div class="main-info">
+            <div class="avatar"></div>
+            <div class="name">Andrew Vakulenko <br> programmer</div>
+            <div class="contacts">
+              <div>sitemart@gmail.com</div>
+              <div>github.com/ShCoder-1</div>
+            </div>
+          </div>
+  
+          <div class="text-block">
+            <h2>About me</h2>
+            <p>Hi, my name is Andrew. I am a creative developer. I like to read (imaginative and popular science literature) and play video games.
+              What I love most about programming is the ability to create
+            </p>
+          </div>
+  
+          <div class="text-block">
+            <h2>Timeline</h2>
+            <p><span class="strong">March 2018 - February 2022 - Pomodoro Brand</span>   
+              <br> Position - marketing
+            </p>
+            <h2>Timeline</h2>
+            <p><span class="strong">March 2015 - March 2018 - freelancer</span>   
+              <br> Position - php programmer
+            </p>
+          </div>
+          
+          <div class="text-block">
+            <h2>Skills</h2>
+            <p>Communication - 100</p>
+            <p>Development - 100</p>
+            <p>Creative - 100</p>
+          </div>
+
+          <div class="game-zone">
+            
+            <div id="enter-game" class="">
+              <h2>Secret Resume</h2>
+              <p>To know secret info you need <br> <span class="strong">win a boss!</span> </p>
+              <img src="design/images/cave.png" alt="cave" class="cave">
+              <div class="btn btn-play click-action" data-hide="enter-game" data-show="boss-outer">PLAY!</div>
+            </div>
+            <div class="hide" id="boss-outer">
+              <div id="boss">
+                <div class="boss-life-bar-outer">
+                  <div id="boss-life" class="boss-life-bar-inner" style="width: 210px;"></div>
+                </div>
+                
+                <div class="boss-outer"></div>
+                
+                <div class="dialogue-outer">
+                  <div class="plyaer-phrase">Player: <span id="player-phrase">...</span></div>
+                  <div class="boss-phrase">Boss: <span id="boss-phrase">...</span></div>
+                </div>
+          
+                <div class="action-outer">
+                  <div id="physical" class="action-row physical">physical</div>
+                  <div id="magical" class="action-row magical">magical</div>
+                  <div id="mental" class="action-row mental">mental</div>                
+                </div>
+                <div class="" id="result"></div>
+              </div>
+            </div>
+            
+            <div class="hide" id="win-game-outer">
+              <div id="win-game">
+                <h2 class="wininfo">You win!</h2>
+                <div class="btn btn-play click-action" data-hide="win-game" data-show="cat-outer">SEE SECRET!</div>
+              </div>
+            </div>
+            
+            <div class="hide" id="cat-outer">
+              <div id="cat">
+                <img src="design/images/cat.jpg" alt="cat">
+              </div>
+            </div>       
+
+          </div><!-- END game-zone -->
+          
+          <div style="height: 100px;"></div>
+
+        </div><!-- END container-->       
+
+      </div> <!-- END: body-wrpa-->
+  
+      
+    </div>
+    
+    <script src="design/js/app.js"></script>
   </body>
 </html>
