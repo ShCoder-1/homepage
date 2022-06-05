@@ -21,8 +21,6 @@ const GamePhrases = {
   }
 };
 
-console.log(GameActionFildes);
-
 class MainGame {
   
   constructor(startBossLife,damage) {
@@ -96,8 +94,6 @@ const game = new MainGame(210, 70);
 // Handle a player click action
 Array.from(GameActionFildes).forEach(action => action.addEventListener('click', e => {
     let actionId = e.target.id;
-    
-    console.log(actionId);
     
     GameActions.push(actionId);
     game.act(actionId);
