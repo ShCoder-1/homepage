@@ -7,17 +7,17 @@ let GameActions = [];
 
 const GamePhrases = {
   'player': {
-    'physical': ['You crash his head', 'You do something', 'You use sword'],
-    'magical': ['magical action 1', 'magical action 2', 'magical action 3'],
-    'mental': ['mental action 1', 'mental action 2', 'mental action 3'],
+    'physical': ['You make a sharp lunge', 'Oh, your face hit my heel!', 'Your sword cuts his body'],
+    'magical': ['Avacado Kedavra!', 'You impale him with your lightning', 'Fireball burns his eyebrow'],
+    'mental': ['Can I talk to you about the gods?', 'You teach him good manners', 'You spit in his face'],
   },
   'boss': {
     'nodamage': {
-      'physical': ['Boss no physical 1', 'Boss no physical 2', 'Boss no physical 3'],
-      'magical': ['Boss no magical 1', 'Boss no magical 2', 'Boss no magical 3'],
-      'mental': ['Boss no mental 1', 'Boss no mental 2', 'Boss no mental 3'],
+      'physical': ['The mosquito bites even more painfully!', 'I will crush you like an ant!', 'Oh, how painful (sarcasm)!'],
+      'magical': ['Ha, snowflake man!', 'Your magic is as pathetic as you!', 'Are you sure you are a mage?'],
+      'mental': ['What do you know about life!', 'You are pathetic!', 'Ha! Is that all you can?'],
     }, 
-    'damaged': ['Oh no 1', 'Oh no 2', 'Oh no 3']
+    'damaged': ['Why are you doing it?', 'That hurts...', 'Oh no, not in my eye!']
   }
 };
 
